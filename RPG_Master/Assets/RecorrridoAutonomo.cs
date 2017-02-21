@@ -3,13 +3,13 @@ using System.Collections;
 
 public class RecorrridoAutonomo : MonoBehaviour {
 
-	private NavMeshAgent agente;
+	private UnityEngine.AI.NavMeshAgent agente;
 	public Transform destiny;
 
 	// Use this for initialization
 	void Start () {
 	
-		agente = GetComponent <NavMeshAgent>();
+		agente = GetComponent <UnityEngine.AI.NavMeshAgent>();
 		agente.SetDestination (destiny.position);
 	}
 	
